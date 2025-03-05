@@ -5,7 +5,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: black;
-    background: linear-gradient(to bottom, white, #facec8);
+    background: #F5E1C8;
 }
 /* Thanh navigation */
 nav {
@@ -14,7 +14,7 @@ nav {
     width: 100%;
     z-index: 1000;
     height: 70px;
-    background-color: rgba(74, 133, 252, 0.7);
+    background-color: rgba(88, 74, 62, 0.85);
 }
 
 /* Chia deu cac link tren 1 dong */
@@ -28,56 +28,58 @@ nav ul {
     padding: 0;
 }
 
-
-
 nav li {
     flex: 1;
 }
 
 /* Doi mau khi hover */
 nav li:hover {
-    background: rgba(100, 200, 250, 0.9);
+    background: rgba(88, 74, 62, 0.9);
 }
 
 
 nav a {
+    position: relative;
     text-decoration: none;
-    color: black;
+    color: rgba(179, 163, 147);
     font-size: 18px;
-    font-weight: bold;
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* Dinh dang chu */
 h1, h2, h3 {
-    color: #004080;
+    color: #A42D2D;
 }
 h1 {
     text-align: center;
+    font-size: 45px;
+    text-shadow: 3px 3px 6px rgba(175, 200, 230, 0.5);
+    text-transform: uppercase;
 }
 main {
-    padding: 0 200px;
+    padding: 0 500px;
+    font-size: 35px;
+    text-align: justify, center;
+    text-justify: inter-word;
 }
+
 /* Image size except hue */
 img:not(.hue) {
     height: 750px;
     width: auto;
+    border: 5px solid #8A725C;
+    border-radius: 3px;
 }
 /*Mark current link */
-
-nav a {
-    position: relative;
-    text-decoration: none;
-}
-
 nav a.active {
-    border-bottom: 3px solid darkblue;
-    color: white;
+    border-bottom: 3px solid #6C7A89;
+    color: rgb(230, 216, 200);
 }
 
 nav a::after {
@@ -87,7 +89,7 @@ nav a::after {
     bottom: -3px;
     width: 100%;
     height: 3px;
-    background-color: darkblue;
+    background-color: #6C7A89;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
