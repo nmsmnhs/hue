@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap');
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #493329;
+    min-height: 100vh;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    background-color: rgba(53, 110, 0, 0.75);
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: space-evenly;
+    height: 70px;
+    margin: 0 30%;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+}
+nav li:hover {
+    background: rgba(53, 110, 0, 0.9);
+}
+
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(179, 163, 147);
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+nav a.active {
+    border-bottom: 3px solid #6C7A89;
+    color: rgb(230, 216, 200);
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: #6C7A89;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+h1, h2, h3 {
+    font-size: 45px;
+    color: #f8ab36;
+}
+h2 {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 2px 2px 3px rgba(175, 200, 230, 0.5);
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 60px;
+    position: fixed;
+    top: 5px;
+    margin-left: 27%;
+}
+section {
+    display: flex;
+}
+.bdat section:nth-child(even), .bddd section:nth-child(odd), .bdlh section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.bdat section:nth-child(odd), .bddd section:nth-child(even), .bdlh section:nth-child(odd) {
+    flex-direction: row;
+}
+main p {
+    font-size: 40px;
+    text-align: justify;
+    text-align-last: center;
+    text-justify: inter-word;
+    hyphens: auto;
+    margin: 50px auto;
+    max-width: 70%;
+    z-index: 11;
+    color: #F5E1C8;
+}
+
+section p {
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+
+main img:not(.bg):not(.bdlh) {
+    display: block;
+    height: 750px;
+    width: auto;
+    border: 5px solid #8A725C;
+    border-radius: 3px;
+    z-index: 11;
+}
+
+section img {
+    margin: 25px 50px;
+}
+
+main > img:not(.bg) {
+    margin: 0 auto;
+}
+
+main .bg {
+    display: block;
+    height: 70%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: -1;
+    opacity: 30%;
+}
+header > img{
+    filter: blur(0.25px);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bdlh section img {
+    max-width: 47%;
+}
