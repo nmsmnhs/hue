@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: black;
-    background: linear-gradient(to bottom, white, #facec8);
+    background: #493329;
+    min-height: 100vh;
 }
 nav {
     position: fixed;
@@ -13,7 +13,7 @@ nav {
     width: 100%;
     z-index: 1000;
     height: 70px;
-    background-color: rgba(74, 133, 252, 0.7);
+    background-color: rgba(122, 69, 1, 0.75);
 }
 
 nav ul {
@@ -30,16 +30,14 @@ nav li {
     flex: 1;
 }
 nav li:hover {
-    background: rgba(100, 200, 250, 0.9);
+    background: rgba(122, 89, 1, 0.9);
 }
 
 
 nav a {
     position: relative;
-    position: relative;
     text-decoration: none;
-    color: rgba(179, 163, 147);
-    color: rgba(179, 163, 147);
+    color: rgb(192, 175, 158);
     font-size: 18px;
     height: 100%;
     width: 100%;
@@ -50,34 +48,8 @@ nav a {
     font-weight: bold;
 }
 
-/* Dinh dang chu */
-h1, h2, h3 {
-    color: #A42D2D;
-}
-h1 {
-    text-align: center;
-    font-size: 45px;
-    text-shadow: 3px 3px 6px rgba(175, 200, 230, 0.5);
-    text-transform: uppercase;
-}
-main {
-    padding: 0 500px;
-    font-size: 35px;
-    text-align: justify, center;
-    text-justify: inter-word;
-}
 
-/* Image size except hue */
-img:not(.hue) {
-    height: 750px;
-    width: auto;
-    border: 5px solid #8A725C;
-    border-radius: 3px;
-}
-/*Mark current link */
 nav a.active {
-    border-bottom: 3px solid #6C7A89;
-    color: rgb(230, 216, 200);
     border-bottom: 3px solid #6C7A89;
     color: rgb(230, 216, 200);
 }
@@ -142,7 +114,7 @@ main p {
 section p {
     justify-content: center;
     align-content: center;
-    padding: 50px;
+    padding: 25px 150px;
 }
 
 main img:not(.bg):not(.bdlh) {
@@ -155,7 +127,7 @@ main img:not(.bg):not(.bdlh) {
 }
 
 section img {
-    margin: 25px 50px;
+    margin: 25px 150px;
 }
 
 main > img:not(.bg) {
@@ -164,7 +136,7 @@ main > img:not(.bg) {
 
 main .bg {
     display: block;
-    height: 70%;
+    height: 80%;
     width: auto;
     top: 50%;
     left: 50%;
@@ -179,5 +151,5 @@ header > img{
 }
 
 .bdlh section img {
-    max-width: 47%;
+    max-width: 50%;
 }
