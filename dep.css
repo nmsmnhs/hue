@@ -12,7 +12,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    height: 70px;
+    height: 5.7vh;
     background-color: rgba(122, 69, 1, 0.75);
 }
 
@@ -21,7 +21,7 @@ nav ul {
     flex: 1;
     list-style: none;
     justify-content: space-evenly;
-    height: 70px;
+    height: 5.7vh;
     margin: 0 30%;
     padding: 0;
 }
@@ -38,7 +38,7 @@ nav a {
     position: relative;
     text-decoration: none;
     color: rgb(192, 175, 158);
-    font-size: 18px;
+    font-size: 1.4vh;
     height: 100%;
     width: 100%;
     display: flex;
@@ -50,7 +50,7 @@ nav a {
 
 
 nav a.active {
-    border-bottom: 3px solid #6C7A89;
+    border-bottom: 0.17em solid #6C7A89;
     color: rgb(230, 216, 200);
 }
 
@@ -58,9 +58,9 @@ nav a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -0.17em;
     width: 100%;
-    height: 3px;
+    height: 0.17em;
     background-color: #6C7A89;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
@@ -70,24 +70,25 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
-h1, h2, h3 {
-    font-size: 45px;
+h2, h3 {
+    font-size: 3.5vh;
     color: #f8ab36;
 }
 h2 {
     text-align: center;
 }
 h1 {
+    color: #f8ab36;
     text-align: center;
-    font-size: 45px;
-    text-shadow: 2px 2px 3px rgba(175, 200, 230, 0.5);
+    font-size: 3.7vh;
+    text-shadow: 0.04em 0.04em 0.06em rgba(175, 200, 230, 0.5);
     text-transform: uppercase;
 }
 
 .logo {
-    height: 60px;
+    height: 5.3vh;
     position: fixed;
-    top: 5px;
+    top: 0.2vh;
     margin-left: 27%;
 }
 section {
@@ -100,12 +101,12 @@ section {
     flex-direction: row;
 }
 main p {
-    font-size: 40px;
+    font-size: 3vh;
     text-align: justify;
     text-align-last: center;
     text-justify: inter-word;
     hyphens: auto;
-    margin: 50px auto;
+    margin: 1.9vh auto;
     max-width: 70%;
     z-index: 11;
     color: #F5E1C8;
@@ -114,20 +115,17 @@ main p {
 section p {
     justify-content: center;
     align-content: center;
-    padding: 25px 150px;
+    padding: 3em 4em;
 }
 
-main img:not(.bg):not(.bdlh) {
+main img:not(.bg) {
     display: block;
-    height: 750px;
-    width: auto;
+    min-width: 40vw;
+    height: auto;
     border: 5px solid #8A725C;
     border-radius: 3px;
     z-index: 11;
-}
-
-section img {
-    margin: 25px 150px;
+    margin: 3vh 5vw;
 }
 
 main > img:not(.bg) {
@@ -148,8 +146,4 @@ main .bg {
 header > img{
     filter: blur(0.25px);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-}
-
-.bdlh section img {
-    max-width: 50%;
 }
